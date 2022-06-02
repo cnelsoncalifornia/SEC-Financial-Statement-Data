@@ -1,11 +1,12 @@
 # Use this code to create a dataframe containing reported net income for periods running Jan 1 through Dec 31 and then export it to a CSV file.
+# This code may be modified to get other financial statement data and/or other reporting periods.
 # Tags those companies that have 2021 (the latest year available as of this writing) and 2009, which is the earliest year for which the data seem to be decent.
 # Requires a list of the names and paths of each file for each company.
 # Created by cnelsoncalifornia and first made available on github June 1, 2022.
 
 
 
-# WARNING: This code is likely to exclude data from many companies.  This should only be considered a preliminary code.
+# WARNING: This code is likely to exclude data from many companies.  This should only be considered a preliminary code.  
 # See the readme file for more details.
 
 
@@ -22,7 +23,7 @@ num_companies=len(file_list.index)
 i = 0
 data = pd.DataFrame()
 d1 = pd.DataFrame()
-for i in range(num_companies):      # replace range(100) with range(num_companies) when ready to get all data.  There is a long wait.
+for i in range(num_companies):      #  There may be a long wait. Replace range(num_companies) with range(100) to test the code. 
     with open(file_list['File Addresses'][i], 'r') as json_file:
         company = (json.load(json_file))
     co_num=file_list['File Addresses'][i][-15:-5]  # This gives the company's identifying CIK code.
