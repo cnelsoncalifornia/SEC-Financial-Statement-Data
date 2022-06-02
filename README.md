@@ -1,5 +1,5 @@
 # SEC-Financial-Statement-Data
-This code extracts financial statement data from annual and quarterly reportes filed by US publicly traded corporations.
+This code extracts financial statement data from annual and quarterly reports filed by US publicly traded corporations.
 
 Warning!  This code is likely to exclude many data points that may be important to your results.  This should be considered preliminary only.  In order to include more data, you will need to modify the code given in SEC Data Extract GitHub.py (included).
 
